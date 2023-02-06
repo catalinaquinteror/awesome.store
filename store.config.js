@@ -27,7 +27,7 @@ module.exports = {
   },
 
   // Production URLs
-  storeUrl: 'https://itglobers.com',
+  storeUrl: 'https://catalina--itglobers.myvtex.com/',
   secureSubdomain: 'https://secure.itglobers.com',
   checkoutUrl: 'https://secure.itglobers.com/checkout',
   loginUrl: 'https://secure.itglobers.com/api/io/login',

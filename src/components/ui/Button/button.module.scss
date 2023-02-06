@@ -133,7 +133,7 @@
   display: inline-flex;
   column-gap: var(--fs-button-gap);
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: var(--fs-button-height);
   padding: var(--fs-button-padding);
   font-size: var(--fs-button-text-size);

@@ -37,6 +37,7 @@ function Navbar() {
     >
       <section data-fs-navbar-header>
         <div className="layout__content" data-fs-navbar-row>
+          <NavLinks classes="hidden-mobile" />
           {!searchExpanded && (
             <>
               <Button
@@ -47,18 +48,24 @@ function Navbar() {
               />
               <Link
                 href="/"
-                aria-label="Go to Faststore home"
-                title="Go to Faststore home"
+                aria-label="Go to mont home"
+                title="Go to mont home"
                 data-fs-navbar-logo
               >
                 <Logo />
               </Link>
             </>
           )}
+
+          <Suspense fallback={<ButtonSignInFallback />}>
+            <ButtonSignIn />
+          </Suspense>
           <SearchInput />
+
           <div
             data-fs-navbar-buttons
             data-fs-navbar-search-expanded={searchExpanded}
+            // data-fs-navbar-search-expanded={searchMobileRef}
           >
             {searchExpanded && (
               <Button
@@ -78,14 +85,11 @@ function Navbar() {
               buttonTestId="store-input-mobile-button"
               onSearchClick={handlerExpandSearch}
             />
-            <Suspense fallback={<ButtonSignInFallback />}>
-              <ButtonSignIn />
-            </Suspense>
+
             <CartToggle />
           </div>
         </div>
       </section>
-      <NavLinks classes="hidden-mobile" />
 
       {displayNavbar && <NavbarSlider />}
     </header>
