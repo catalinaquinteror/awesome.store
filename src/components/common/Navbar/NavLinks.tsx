@@ -14,7 +14,7 @@ interface NavLinksProps {
 const collections = [
   {
     name: 'Viajes y uso diario',
-    href: '/office',
+    href: '/viajes--y-uso-diario',
   },
   {
     name: 'Fotografia',
@@ -22,7 +22,7 @@ const collections = [
   },
   {
     name: 'Ciclismo',
-    href: '/office',
+    href: '/https://www.falabella.com.co/falabella-co',
   },
   {
     name: 'Accesorios',

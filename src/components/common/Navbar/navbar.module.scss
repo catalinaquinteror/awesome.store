@@ -100,6 +100,16 @@
     [data-fs-navbar-button-menu] {
       @include media(">=notebook") { display: none; }
     }
+
+    [data-fs-navbar-menu-logo] {
+      display: flex;
+      width: 70%;
+    }
+
+    [data-fs-navbar-search-cart] {
+      display: flex;
+      width: 30%;
+    }
   }
 
   [data-fs-navbar-buttons] {

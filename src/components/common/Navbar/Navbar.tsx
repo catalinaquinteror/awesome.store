@@ -37,56 +37,58 @@ function Navbar() {
     >
       <section data-fs-navbar-header>
         <div className="layout__content" data-fs-navbar-row>
-          <NavLinks classes="hidden-mobile" />
-          {!searchExpanded && (
-            <>
-              <Button
-                data-fs-navbar-button-menu
-                aria-label="Open Menu"
-                icon={<Icon name="List" width={32} height={32} />}
-                onClick={openNavbar}
-              />
-              <Link
-                href="/"
-                aria-label="Go to mont home"
-                title="Go to mont home"
-                data-fs-navbar-logo
-              >
-                <Logo />
-              </Link>
-            </>
-          )}
-
-          <Suspense fallback={<ButtonSignInFallback />}>
-            <ButtonSignIn />
-          </Suspense>
-          <SearchInput />
-
-          <div
-            data-fs-navbar-buttons
-            data-fs-navbar-search-expanded={searchExpanded}
-            // data-fs-navbar-search-expanded={searchMobileRef}
-          >
-            {searchExpanded && (
-              <Button
-                data-fs-button-collapse
-                aria-label="Collapse search bar"
-                icon={<Icon name="CaretLeft" width={32} height={32} />}
-                onClick={() => {
-                  setSearchExpanded(false)
-                  searchMobileRef.current?.resetSearchInput()
-                }}
-              />
+          <div data-fs-navbar-menu-logo>
+            <NavLinks classes="hidden-mobile" />
+            {!searchExpanded && (
+              <>
+                <Button
+                  data-fs-navbar-button-menu
+                  aria-label="Open Menu"
+                  icon={<Icon name="List" width={32} height={32} />}
+                  onClick={openNavbar}
+                />
+                <Link
+                  href="/"
+                  aria-label="Go to mont home"
+                  title="Go to mont home"
+                  data-fs-navbar-logo
+                >
+                  <Logo />
+                </Link>
+              </>
             )}
-            <SearchInput
-              placeholder=""
-              ref={searchMobileRef}
-              testId="store-input-mobile"
-              buttonTestId="store-input-mobile-button"
-              onSearchClick={handlerExpandSearch}
-            />
+          </div>
+          <div data-fs-navbar-search-cart>
+            <Suspense fallback={<ButtonSignInFallback />}>
+              <ButtonSignIn />
+            </Suspense>
+            <SearchInput />
 
-            <CartToggle />
+            <div
+              data-fs-navbar-buttons
+              data-fs-navbar-search-expanded={searchExpanded}
+            >
+              {searchExpanded && (
+                <Button
+                  data-fs-button-collapse
+                  aria-label="Collapse search bar"
+                  icon={<Icon name="CaretLeft" width={32} height={32} />}
+                  onClick={() => {
+                    setSearchExpanded(false)
+                    searchMobileRef.current?.resetSearchInput()
+                  }}
+                />
+              )}
+              <SearchInput
+                placeholder=""
+                ref={searchMobileRef}
+                testId="store-input-mobile"
+                buttonTestId="store-input-mobile-button"
+                onSearchClick={handlerExpandSearch}
+              />
+
+              <CartToggle />
+            </div>
           </div>
         </div>
       </section>
