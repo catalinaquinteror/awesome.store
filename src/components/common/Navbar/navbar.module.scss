@@ -95,6 +95,8 @@
     @include media(">=notebook") {
       display: grid;
       grid-template-columns: 1fr minmax(auto, 37.5rem) 1fr;
+      justify-items: center;
+      padding-top: 10px;
     }
 
     [data-fs-navbar-button-menu] {
@@ -103,12 +105,15 @@
 
     [data-fs-navbar-menu-logo] {
       display: flex;
-      width: 70%;
+      justify-content: flex-end;
+      width: 90%;
+      padding-top: 30;
     }
 
     [data-fs-navbar-search-cart] {
       display: flex;
-      width: 30%;
+      width: 40%;
+      padding-top: 60;
     }
   }
 

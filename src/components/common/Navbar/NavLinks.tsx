@@ -41,7 +41,7 @@ const collections = [
 function NavLinks({ onClickLink, classes = '' }: NavLinksProps) {
   return (
     <nav className={`${styles.fsNavlinks} ${classes}`}>
-      <div className="layout__content">
+      <div className="layout__content" data-fs-navlinks-content>
         {/* <RegionalizationButton /> */}
         <UIList data-fs-navlinks-list>
           {collections.map(({ href, name }) => (
