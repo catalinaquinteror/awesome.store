@@ -13,8 +13,13 @@ const ButtonSignIn = () => {
       className={`${styles.fsButton} text__title-mini`}
       variant="tertiary"
     >
-      <Icon name="User" width={18} height={18} weight="bold" />
-      <span>{person?.id ? 'My Account' : 'Sign In'}</span>
+      <Icon
+        name="User"
+        width={25}
+        height={25}
+        // weight="bold"
+      />
+      {/* <span>{person?.id ? 'My Account' : 'Sign In'}</span> */}
     </ButtonLink>
   )
 }

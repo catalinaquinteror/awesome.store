@@ -1,6 +1,6 @@
 import { List as UIList } from '@faststore/ui'
 import type { AnchorHTMLAttributes } from 'react'
-import RegionalizationButton from 'src/components/regionalization/RegionalizationButton'
+// import RegionalizationButton from 'src/components/regionalization/RegionalizationButton'
 import Link from 'src/components/ui/Link'
 import { mark } from 'src/sdk/tests/mark'
 
@@ -13,19 +13,27 @@ interface NavLinksProps {
 
 const collections = [
   {
-    name: 'Office',
-    href: '/office',
+    name: 'Viajes y uso diario',
+    href: '/viajes--y-uso-diario',
   },
   {
-    name: 'Home Appliances',
+    name: 'Fotografia',
     href: '/kitchen---home-appliances',
   },
   {
-    name: 'Computer and Software',
+    name: 'Ciclismo',
+    href: '/https://www.falabella.com.co/falabella-co',
+  },
+  {
+    name: 'Accesorios',
+    href: '/kitchen---home-appliances',
+  },
+  {
+    name: 'Ver todo',
     href: '/computer---software',
   },
   {
-    name: 'Technology',
+    name: 'Inspiración',
     href: '/technology',
   },
 ]
@@ -33,8 +41,8 @@ const collections = [
 function NavLinks({ onClickLink, classes = '' }: NavLinksProps) {
   return (
     <nav className={`${styles.fsNavlinks} ${classes}`}>
-      <div className="layout__content">
-        <RegionalizationButton />
+      <div className="layout__content" data-fs-navlinks-content>
+        {/* <RegionalizationButton /> */}
         <UIList data-fs-navlinks-list>
           {collections.map(({ href, name }) => (
             <li key={name} data-fs-navlinks-list-item>

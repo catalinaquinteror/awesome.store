@@ -93,6 +93,8 @@ const SearchInput = forwardRef<SearchInputRef, SearchInputProps>(
             icon={
               <Icon
                 name="MagnifyingGlass"
+                width={10}
+                height={10}
                 onClick={onSearchClick}
                 data-testid={buttonTestId}
               />

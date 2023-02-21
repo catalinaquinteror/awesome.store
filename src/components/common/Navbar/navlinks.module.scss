@@ -40,7 +40,7 @@
   @include media("<notebook") { padding: 0; }
 
   @include media(">=notebook") {
-    z-index: var(--fs-z-index-below);
+    z-index: 2;
 
     > div {
       display: flex;
@@ -51,6 +51,8 @@
   [data-fs-navlinks-list-item] {
     display: flex;
     align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   [data-fs-regionalization-button] {
@@ -92,5 +94,9 @@
   @include media("<notebook") {
     border-top: var(--fs-navlinks-border-top-width-mobile) solid var(--fs-navlinks-border-top-color-mobile);
     border-bottom: var(--fs-navlinks-border-bottom-width-mobile) solid var(--fs-navlinks-border-bottom-color-mobile);
+  }
+
+  [data-fs-navlinks-content] {
+    padding-top: 8px;
   }
 }
