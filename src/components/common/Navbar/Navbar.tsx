@@ -38,7 +38,6 @@ function Navbar() {
       <section data-fs-navbar-header>
         <div className="layout__content" data-fs-navbar-row>
           <div data-fs-navbar-menu-logo>
-            <NavLinks classes="hidden-mobile" />
             {!searchExpanded && (
               <>
                 <Button
@@ -47,6 +46,7 @@ function Navbar() {
                   icon={<Icon name="List" width={32} height={32} />}
                   onClick={openNavbar}
                 />
+                <NavLinks classes="hidden-mobile" />
                 <Link
                   href="/"
                   aria-label="Go to mont home"
@@ -59,10 +59,13 @@ function Navbar() {
             )}
           </div>
           <div data-fs-navbar-search-cart>
-            <Suspense fallback={<ButtonSignInFallback />}>
-              <ButtonSignIn />
-            </Suspense>
-            <SearchInput />
+            <div data-fs-navbar-login>
+              <Suspense fallback={<ButtonSignInFallback />}>
+                <ButtonSignIn />
+              </Suspense>
+            </div>
+
+            {/* <SearchInput /> */}
 
             <div
               data-fs-navbar-buttons
@@ -85,6 +88,13 @@ function Navbar() {
                 testId="store-input-mobile"
                 buttonTestId="store-input-mobile-button"
                 onSearchClick={handlerExpandSearch}
+              />
+
+              <Button
+                data-fs-navbar-button-wishlist
+                aria-label="Wishlist"
+                icon={<Icon name="Wishlist" width={25} height={25} />}
+                // onClick={openNavbar}
               />
 
               <CartToggle />

@@ -30,6 +30,7 @@
   --fs-search-input-button-height-desktop         : var(--fs-search-input-height-desktop);
 
   // Icon
+  // --fs-search-input-icon-search-width             : var(--fs-spacing-3);
   --fs-search-input-icon-width                    : var(--fs-spacing-4);
   --fs-search-input-icon-height                   : var(--fs-search-input-icon-width);
   --fs-search-input-icon-color                    : var(--fs-color-neutral-7);
@@ -107,6 +108,8 @@
     [data-fs-icon] { display: block; }
 
     [data-fs-button] svg {
+      // width: var(--fs-search-input-icon-search-width);
+      // height: var(--fs-search-input-icon-search-width);
       width: var(--fs-search-input-icon-width);
       height: var(--fs-search-input-icon-height);
       color: var(--fs-search-input-icon-color);

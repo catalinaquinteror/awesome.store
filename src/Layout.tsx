@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react'
 import Footer from 'src/components/common/Footer'
 import Navbar from 'src/components/common/Navbar'
 import Toast from 'src/components/common/Toast'
-import RegionalizationBar from 'src/components/regionalization/RegionalizationBar'
+// import RegionalizationBar from 'src/components/regionalization/RegionalizationBar'
 import { useUI } from 'src/sdk/ui/Provider'
 import type { PropsWithChildren } from 'react'
 
@@ -28,7 +28,7 @@ function Layout({ children }: PropsWithChildren) {
       <Toast />
 
       <main>
-        <RegionalizationBar classes="display-mobile" />
+        {/* <RegionalizationBar classes="display-mobile" /> */}
         {children}
       </main>
 
