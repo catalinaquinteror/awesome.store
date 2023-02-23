@@ -1,13 +1,14 @@
 import {
   List as UIList,
-  PaymentMethods as UIPaymentMethods,
+  // PaymentMethods as UIPaymentMethods,
 } from '@faststore/ui'
-import Logo from 'src/components/ui/Logo'
-import IncentivesFooter from 'src/components/sections/Incentives/IncentivesFooter'
+// import Logo from 'src/components/ui/Logo'
+// import IncentivesFooter from 'src/components/sections/Incentives/IncentivesFooter'
 import Icon from 'src/components/ui/Icon'
 import Link from 'src/components/ui/Link'
-import SROnly from 'src/components/ui/SROnly'
+// import SROnly from 'src/components/ui/SROnly'
 import { mark } from 'src/sdk/tests/mark'
+import Newsletter from 'src/components/sections/Newsletter'
 
 import styles from './footer.module.scss'
 import FooterLinks from './FooterLinks'
@@ -40,14 +41,23 @@ export function Footer({
       data-fs-footer-payment-methods={sectionPaymentMethods}
       className={`${styles.fsFooter} layout__content-full`}
     >
-      {sectionIncentives && <IncentivesFooter />}
+      {/* {sectionIncentives && <IncentivesFooter />} */}
 
       <div data-fs-footer-nav className="layout__content">
         <FooterLinks />
+        {/* {sectionAdress
+<sectionAdress>} */}
+        <section data-fs-footer-adress>
+          <address>
+            BOGOTÁ <br />
+            Ambardae <br />
+            CC Unicentro, local 2-144
+          </address>
+        </section>
 
         {sectionSocial && (
           <section data-fs-footer-social>
-            <p data-fs-footer-title>Follow us</p>
+            <p data-fs-footer-title>Síguenos en</p>
             <UIList variant="unordered">
               <li>
                 <Link
@@ -71,7 +81,7 @@ export function Footer({
                   <Icon width="24px" height="24px" name="Instagram" />
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   variant="footer"
                   href="https://www.pinterest.com/"
@@ -81,8 +91,8 @@ export function Footer({
                 >
                   <Icon width="24px" height="24px" name="Pinterest" />
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   variant="footer"
                   href="https://twitter.com/"
@@ -92,16 +102,21 @@ export function Footer({
                 >
                   <Icon width="24px" height="24px" name="Twitter" />
                 </Link>
-              </li>
+              </li> */}
             </UIList>
           </section>
         )}
       </div>
 
-      <div data-fs-footer-note className="layout__content">
-        <Logo />
+      <Newsletter
+        title="Regístrate ahora"
+        description="Sé el primero en conocer nuestras novedades y ofertas exclusivas."
+      />
 
-        {sectionPaymentMethods && (
+      <div data-fs-footer-note className="layout__content">
+        {/* <Logo /> */}
+
+        {/* {sectionPaymentMethods && (
           <UIPaymentMethods data-fs-footer-payment-methods>
             <p data-fs-footer-title>Payment Methods</p>
             <UIList>
@@ -139,16 +154,12 @@ export function Footer({
               </li>
             </UIList>
           </UIPaymentMethods>
-        )}
+        )} */}
 
         <div data-fs-footer-copyright className="text__legend">
-          <p>This website uses VTEX technology</p>
-          <p>
-            In-store price may vary. Prices and offers are subject to change.
-            2021 Store name. All rights reserved. Store is a trademark of Store
-            and its affiliated companies.
-          </p>
-          <address>Mount St, 000, New York / NY - 00000.</address>
+          <p>© 2023 Mônt</p>
+          <p>© 2023 Mônt</p>
+          {/* <address>BOGOTÁ <br/>Ambardae <br/>CC Unicentro, local 2-144</address> */}
         </div>
       </div>
     </footer>

@@ -7,81 +7,81 @@ import styles from './footer.module.scss'
 
 const links = [
   {
-    title: 'Our company',
+    title: 'Nosotros',
     items: [
       {
         href: '/',
-        name: 'About Us',
+        name: 'Garantía',
       },
       {
         href: '/',
-        name: 'Our Blog',
+        name: 'FAQs',
       },
       {
         href: '/',
-        name: 'Stores',
+        name: 'Día sin IVA',
       },
-      {
-        href: '/',
-        name: 'Work With Us',
-      },
+      // {
+      //   href: '/',
+      //   name: 'Work With Us',
+      // },
     ],
   },
-  {
-    title: 'Orders & Purchases',
-    items: [
-      {
-        href: '/',
-        name: 'Check Order Status',
-      },
-      {
-        href: '/',
-        name: 'Returns and Exchanges',
-      },
-      {
-        href: '/',
-        name: 'Product Recall',
-      },
-      {
-        href: '/',
-        name: 'Gift Cards',
-      },
-    ],
-  },
-  {
-    title: 'Support & Services',
-    items: [
-      {
-        href: '/',
-        name: 'Support Center',
-      },
-      {
-        href: '/',
-        name: 'Schedule a Service',
-      },
-      {
-        href: '/',
-        name: 'Contact Us',
-      },
-    ],
-  },
-  {
-    title: 'Partnerships',
-    items: [
-      {
-        href: '/',
-        name: 'Affiliate Program',
-      },
-      {
-        href: '/',
-        name: 'Advertise with US',
-      },
-      {
-        href: '/',
-        name: 'Market Place',
-      },
-    ],
-  },
+  // {
+  //   title: '',
+  //   items: [
+  //     {
+  //       href: '/',
+  //       name: 'BOGOTÁ',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'Ambardae',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'CC Unicentro, local 2-144',
+  //     },
+  //     // {
+  //     //   href: '/',
+  //     //   name: 'Gift Cards',
+  //     // },
+  //   ],
+  // },
+  // {
+  //   title: 'Support & Services',
+  //   items: [
+  //     {
+  //       href: '/',
+  //       name: 'Support Center',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'Schedule a Service',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'Contact Us',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Partnerships',
+  //   items: [
+  //     {
+  //       href: '/',
+  //       name: 'Affiliate Program',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'Advertise with US',
+  //     },
+  //     {
+  //       href: '/',
+  //       name: 'Market Place',
+  //     },
+  //   ],
+  // },
 ]
 
 type LinkItem = {
