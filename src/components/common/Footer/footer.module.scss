@@ -65,8 +65,9 @@
 
     @include media(">=notebook") {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      column-gap: var(--fs-footer-spacing-horizontal-notebook);
+      grid-template-columns: repeat(2, 1fr);
+
+      // column-gap: var(--fs-footer-spacing-horizontal-notebook);
     }
 
     &:not(:first-of-type)::before {
@@ -102,7 +103,7 @@
     }
 
     @include media(">=notebook") {
-      row-gap: var(--fs-footer-spacing-vertical-notebook);
+      // row-gap: var(--fs-footer-spacing-vertical-notebook);
       padding-top: 0;
     }
   }
@@ -180,8 +181,13 @@
   }
 
   [data-fs-footer-copyright] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     p + p {
-      margin: var(--fs-spacing-2) auto;
+      // margin-top: 15px;
+      // margin: var(--fs-spacing-2) auto;
     }
 
     address {
@@ -189,7 +195,7 @@
     }
 
     @include media(">=notebook") {
-      grid-column: span 6;
+      grid-column: span 16;
     }
   }
 
@@ -205,9 +211,9 @@
       padding-left: 0;
     }
 
-    @include media(">=notebook") {
-      grid-column: span 9;
-    }
+    // @include media(">=notebook") {
+    //   grid-column: span 9;
+    // }
 
     @include media(">=desktop") {
       grid-column: span 8;

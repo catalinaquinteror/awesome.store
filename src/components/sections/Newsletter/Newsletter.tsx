@@ -2,9 +2,9 @@ import type { ComponentPropsWithRef, FormEvent, ReactNode } from 'react'
 import { forwardRef, useRef } from 'react'
 import { Form } from '@faststore/ui'
 import { useUI } from 'src/sdk/ui/Provider'
-import Icon from 'src/components/ui/Icon'
+// import Icon from 'src/components/ui/Icon'
 import Button from 'src/components/ui/Button'
-import Link from 'src/components/ui/Link'
+// import Link from 'src/components/ui/Link'
 import InputText from 'src/components/ui/InputText'
 import { useNewsletter } from 'src/sdk/newsletter/useNewsletter'
 
@@ -86,7 +86,7 @@ const Newsletter = forwardRef<HTMLFormElement, NewsletterProps>(
         >
           <header data-fs-newsletter-header>
             <h3>
-              <Icon name="Envelop" width={32} height={32} />
+              {/* <Icon name="Envelop" width={32} height={32} /> */}
               {title}
             </h3>
             {description && <span> {description}</span>}
@@ -107,36 +107,36 @@ const Newsletter = forwardRef<HTMLFormElement, NewsletterProps>(
                   buttonActionText="Subscribe"
                   displayClearButton={false}
                 />
-                <span data-fs-newsletter-addendum>
+                {/* <span data-fs-newsletter-addendum>
                   By subscribing to our newsletter you agree to to our{' '}
                   <Link href="/" inverse variant="inline">
                     Privacy Policy.
                   </Link>
-                </span>
+                </span> */}
               </>
             ) : (
               <>
-                <InputText
+                {/* <InputText
                   inputRef={nameInputRef}
                   id="newsletter-name"
                   label="Your Name"
                   required
-                />
+                /> */}
                 <InputText
                   inputRef={emailInputRef}
                   id="newsletter-email"
-                  label="Your Email"
+                  label="Correo electrónico"
                   type="email"
                   required
                 />
-                <span data-fs-newsletter-addendum>
+                {/* <span data-fs-newsletter-addendum>
                   By subscribing to our newsletter you agree to to our{' '}
                   <Link href="/" inverse variant="inline">
                     Privacy Policy.
                   </Link>
-                </span>
+                </span> */}
                 <Button variant="secondary" inverse type="submit">
-                  {loading ? 'Loading...' : 'Subscribe'}
+                  {loading ? 'Loading...' : 'Enviar'}
                 </Button>
               </>
             )}
