@@ -54,7 +54,7 @@
   [data-fs-banner-text-content] {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     height: 100%;
   }
@@ -102,7 +102,8 @@
   }
 
   &[data-fs-banner-text-color-variant="main"] {
-    background-color: var(--fs-banner-main-bkg-color);
+    // background-color: var(--fs-banner-main-bkg-color);
+    background-image: url("https://mont.com.co/wp-content/uploads/2023/02/Room-S.jpg");
 
     [data-fs-banner-text-heading] {
       color: var(--fs-banner-main-text-color);

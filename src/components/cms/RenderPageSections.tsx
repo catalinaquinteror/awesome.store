@@ -1,5 +1,5 @@
 import type { ComponentType } from 'react'
-import BannerText from 'src/components/sections/BannerText'
+// import BannerText from 'src/components/sections/BannerText'
 import Hero from 'src/components/sections/Hero'
 import IncentivesHeader from 'src/components/sections/Incentives/IncentivesHeader'
 import ProductShelf from 'src/components/sections/ProductShelf'
@@ -12,7 +12,7 @@ import ProductTiles from 'src/components/sections/ProductTiles'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const COMPONENTS: Record<string, ComponentType<any>> = {
   Hero,
-  BannerText,
+  // BannerText,
   IncentivesHeader,
   ProductShelf,
   ProductTiles,

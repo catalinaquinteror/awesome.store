@@ -35,6 +35,7 @@
     "@faststore/sdk": "^1.10.34",
     "@faststore/ui": "^1.12.17",
     "@vtex/client-cms": "^0.2.10",
+    "@vtex/gatsby-source-cms": "^0.2.12",
     "gatsby": "^4.16.0",
     "gatsby-plugin-gatsby-cloud": "^4.16.0",
     "gatsby-plugin-manifest": "^4.16.0",

@@ -5546,6 +5546,15 @@
     fetch-retry "^4.1.1"
     isomorphic-unfetch "^3.1.0"
 
+"@vtex/gatsby-source-cms@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-cms/-/gatsby-source-cms-0.2.12.tgz#94e45da799975b4c6ee58b2fa09ae3482da3776d"
+  integrity sha512-skBfQhh528UMhmtiSELToOgQOKf4hwEkALZa1krtECoWwCgA3IIiE/YTk625V04k5NVjPgKQN7opTcwKe5QaRw==
+  dependencies:
+    camelcase "^6.2.0"
+    fetch-retry "^4.1.1"
+    isomorphic-unfetch "^3.1.0"
+
 "@vtex/prettier-config@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-1.0.0.tgz#a7a7091ecff1da340d398000f4855dc9910aa9c9"

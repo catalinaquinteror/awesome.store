@@ -115,6 +115,13 @@ const gatsbyConfig: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-postcss',
     },
+    {
+      resolve: '@vtex/gatsby-source-cms',
+      options: {
+        workspace: 'master', // replace with the VTEX IO workspace in use - generally, use master.
+        tenant: 'itglobers', // replace with the name of your VTEX account
+      },
+    },
   ],
 }
 
