@@ -96,7 +96,7 @@ function Page(props: Props) {
         alt=""
         classBanner="banner-sections-home"
         title=""
-        url="..\images\category-a.webp"
+        url="https://github.com/catalinaquinteror/mont-bags.store/blob/86f38d10b98fd6a86f6d32761572b3b55bf985b7/src/images/category-a.webp"
       />
       {/* Vitrina */}
       <BannerBlog href="" alt="" classBanner="" />
