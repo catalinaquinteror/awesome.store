@@ -1,8 +1,19 @@
 @import "src/styles/scaffold";
 
 .fsBannerCategory {
-  height: 500px;
-  padding-top: 0;
-  margin-top: 0;
-  background-image: url("https://mont.com.co/wp-content/uploads/2023/02/Room-S.jpg");
+  // display: flex;
+  // height: 500px;
+  // padding-top: 0;
+  // margin-top: 0;
+}
+
+[data-fs-banner-category-content="banner-sections-home"] {
+  width: 100%;
+}
+
+[data-fs-banner-category-link] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin: 0 120px;
 }

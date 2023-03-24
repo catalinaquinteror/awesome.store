@@ -8,13 +8,15 @@ export type BannerCategoryProps = {
   alt: string
   classBanner: string
   text?: string
+  title: string
+  url: string
 }
 
 function BannerCategory({
-  // title,
-  // url,
+  title,
+  url,
   href,
-  // alt,
+  alt,
   classBanner,
   text,
 }: BannerCategoryProps) {
@@ -22,19 +24,32 @@ function BannerCategory({
     <Section className="layout__section">
       <Banner
         variant="horizontal"
-        className={styles.fsBannerDescription}
-        data-fs-banner-description={classBanner}
+        className={styles.fsBannerCategory}
+        data-fs-banner-category={classBanner}
       >
-        <BannerContent data-fs-banner-description-content={classBanner}>
-          {text}
-        </BannerContent>
-        <BannerLink data-fs-banner-description-link>
-          <a href={href}>
-            <BannerImage>{/* <img src={url} alt={alt}/> */}</BannerImage>
-          </a>
-          {/* <ButtonLink href={''}>
+        <BannerContent data-fs-banner-category-content={classBanner}>
+          {title}
+          <BannerLink data-fs-banner-category-link>
+            <a href={href}>
+              <BannerImage>
+                <img src={url} alt={alt} width="100%" />
+              </BannerImage>
+            </a>
+            <a href={href}>
+              <BannerImage>
+                <img src={url} alt={alt} width="100%" />
+              </BannerImage>
+            </a>
+            <a href={href}>
+              <BannerImage>
+                <img src={url} alt={alt} width="100%" />
+              </BannerImage>
+            </a>
+            {/* <ButtonLink href={''}>
             </ButtonLink> */}
-        </BannerLink>
+          </BannerLink>
+        </BannerContent>
+        {text}
       </Banner>
     </Section>
   )

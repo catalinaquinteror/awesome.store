@@ -76,16 +76,28 @@ function Page(props: Props) {
       */}
       <RenderPageSections sections={cmsHome?.sections} />
       {/* <BannerText /> */}
-      <BannerMain href="" alt="" classBanner="" />
+      <BannerMain
+        text="Nueva Colección"
+        href=""
+        url=""
+        alt="Imagen maleta"
+        classBanner="banner-principal-home"
+      />
       <BannerDescription
-        text="ERES LO QUE LLEVAS DENTRO
-Llega un momento en el que hay que sacar aquello que te amarra a la cotidianidad. Todas las cosas que pesan y no sirven para nada. Luego, empiezas empacar nuevos sueños y es a ese viaje al que queremos acompañarte. No te vamos a mentir, hay miles de mochilas con las que podrías recorrer el mundo, pero, si te quedas y echas un vistazo a lo que tenemos, prometemos que vas a encontrar algo que va contigo, con tu forma de ver la vida y con el espacio perfecto para llevar todo lo que eres.
+        title="ERES LO QUE LLEVAS DENTRO"
+        text="Llega un momento en el que hay que sacar aquello que te amarra a la cotidianidad. Todas las cosas que pesan y no sirven para nada. Luego, empiezas empacar nuevos sueños y es a ese viaje al que queremos acompañarte. No te vamos a mentir, hay miles de mochilas con las que podrías recorrer el mundo, pero, si te quedas y echas un vistazo a lo que tenemos, prometemos que vas a encontrar algo que va contigo, con tu forma de ver la vida y con el espacio perfecto para llevar todo lo que eres.
 ¡Bienvenid@!"
         url="https://mont.com.co/wp-content/uploads/2023/02/Avion-4k-01-copia-1024x683.jpg"
         alt="Mujer en Avion"
         classBanner="banner-secundario-home"
       />
-      <BannerCategory href="" alt="" classBanner="" />
+      <BannerCategory
+        href=""
+        alt=""
+        classBanner="banner-sections-home"
+        title=""
+        url="..\images\category-a.webp"
+      />
       {/* Vitrina */}
       <BannerBlog href="" alt="" classBanner="" />
       {/* {console.log('index', cmsHome)} */}

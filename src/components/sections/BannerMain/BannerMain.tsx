@@ -1,4 +1,4 @@
-import { Banner, BannerContent, BannerImage, BannerLink } from '@faststore/ui'
+import { Banner, BannerContent, BannerLink } from '@faststore/ui'
 // import { ButtonLink } from 'src/components/ui/Button'
 // import type { HTMLAttributes } from 'react'
 
@@ -10,13 +10,14 @@ export type BannerMainProps = {
   alt: string
   classBanner: string
   text?: string
+  url: string
 }
 
 function BannerMain({
   // title,
   // url,
-  href,
-  // // alt,
+  // href,
+  // alt,
   classBanner,
   text,
 }: BannerMainProps) {
@@ -24,18 +25,19 @@ function BannerMain({
     <Section className="layout__section">
       <Banner
         variant="horizontal"
-        className={styles.fsBannerDescription}
-        data-fs-banner-description={classBanner}
+        className={styles.fsBannerMain}
+        data-fs-banner-main={classBanner}
       >
-        <BannerContent data-fs-banner-description-content={classBanner}>
+        <BannerContent data-fs-banner-main-content={classBanner}>
           {text}
         </BannerContent>
-        <BannerLink data-fs-banner-description-link>
-          <a href={href}>
-            <BannerImage>{/* <img src={url} alt={alt}/> */}</BannerImage>
-          </a>
-          {/* <ButtonLink href={''}>
-            </ButtonLink> */}
+        <BannerLink data-fs-banner-main-link>
+          {/* <a href={href}>
+            <BannerImage>
+              <img src={url} alt={alt} />
+            </BannerImage>
+          </a> */}
+          {/* <ButtonLink href="" /> */}
         </BannerLink>
       </Banner>
     </Section>
