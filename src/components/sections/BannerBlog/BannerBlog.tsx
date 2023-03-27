@@ -7,14 +7,16 @@ export type BannerBlogProps = {
   href: string
   alt: string
   classBanner: string
+  url: string
   text?: string
+  title?: string
 }
 
 function BannerBlog({
-  // title,
-  // url,
+  title,
+  url,
   href,
-  // alt,
+  alt,
   classBanner,
   text,
 }: BannerBlogProps) {
@@ -22,19 +24,22 @@ function BannerBlog({
     <Section className="layout__section">
       <Banner
         variant="horizontal"
-        className={styles.fsBannerDescription}
-        data-fs-banner-description={classBanner}
+        className={styles.fsBannerBlog}
+        data-fs-banner-blog={classBanner}
       >
-        <BannerContent data-fs-banner-description-content={classBanner}>
+        <BannerContent data-fs-banner-blog-content={classBanner}>
+          {title}
           {text}
-        </BannerContent>
-        <BannerLink data-fs-banner-description-link>
-          <a href={href}>
-            <BannerImage>{/* <img src={url} alt={alt}/> */}</BannerImage>
-          </a>
-          {/* <ButtonLink href={''}>
+          <BannerLink data-fs-banner-blog-link>
+            <a href={href}>
+              <BannerImage>
+                <img src={url} alt={alt} width="100%" />
+              </BannerImage>
+            </a>
+            {/* <ButtonLink href={''}>
             </ButtonLink> */}
-        </BannerLink>
+          </BannerLink>
+        </BannerContent>
       </Banner>
     </Section>
   )

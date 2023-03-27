@@ -13,6 +13,7 @@ import BannerMain from 'src/components/sections/BannerMain'
 import BannerDescription from 'src/components/sections/BannerDescription'
 import BannerCategory from 'src/components/sections/BannerCategory'
 import BannerBlog from 'src/components/sections/BannerBlog'
+import bannerCategory from 'src/components/sections/BannerCategory/banner-category.json'
 // import BannerText from 'src/components/sections/BannerText'
 // import Newsletter from 'src/components/sections/Newsletter'
 
@@ -91,15 +92,30 @@ function Page(props: Props) {
         alt="Mujer en Avion"
         classBanner="banner-secundario-home"
       />
-      <BannerCategory
+
+      <BannerCategory elements={bannerCategory} />
+      {/* Vitrina */}
+      <BannerBlog
         href=""
         alt=""
-        classBanner="banner-sections-home"
-        title=""
-        url="https://github.com/catalinaquinteror/mont-bags.store/blob/86f38d10b98fd6a86f6d32761572b3b55bf985b7/src/images/category-a.webp"
+        classBanner="banner-blog-home"
+        title="Inspiración"
+        url="https://itglobers.vtexassets.com/assets/vtex.file-manager-graphql/images/027eecf1-2ee2-40fd-9dc1-8a744d10d199___c11354bd981fa44b1cf3c4fb0d3ea904.jpg"
       />
-      {/* Vitrina */}
-      <BannerBlog href="" alt="" classBanner="" />
+      <BannerBlog
+        href=""
+        alt=""
+        classBanner="banner-blog-home"
+        title=""
+        url="https://itglobers.vtexassets.com/assets/vtex.file-manager-graphql/images/50536eef-d42d-4892-a33b-79c695fe8b6a___351b77167c73816bb2a7c437caaed99f.jpg"
+      />
+      <BannerBlog
+        href=""
+        alt=""
+        classBanner="banner-blog-home"
+        title=""
+        url="https://itglobers.vtexassets.com/assets/vtex.file-manager-graphql/images/bcb3822f-b45b-4b89-9fef-c98f90dd3834___c0d8bf460f5cc73a9dbd29a53da7762d.jpg"
+      />
       {/* {console.log('index', cmsHome)} */}
       {/* <Newsletter
         title="Regístrate "

@@ -1,19 +1,41 @@
 @import "src/styles/scaffold";
 
+// body{
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+// }
+// .layout__section--category{
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+// }
+
 .fsBannerCategory {
-  // display: flex;
-  // height: 500px;
-  // padding-top: 0;
-  // margin-top: 0;
-}
-
-[data-fs-banner-category-content="banner-sections-home"] {
-  width: 100%;
-}
-
-[data-fs-banner-category-link] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   margin: 0 120px;
+}
+
+[data-fs-banner-category-content="banner-category-home"] {
+  position: relative;
+  width: 100%;
+
+  // overflow: hidden;
+}
+
+// [data-fs-banner-category-content="banner-category-home"]:hover {
+//   transform:scale(1.3);
+// }
+
+[data-fs-banner-category-link] {
+  position: absolute;
+  top: 445px;
+  left: 240px;
+  text-decoration: none;
+  background: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
